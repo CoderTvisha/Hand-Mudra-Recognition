@@ -1,0 +1,104 @@
+body{
+    text-align: center;
+    
+    color: black;
+    background-color: #F2F5C8;
+}
+
+#heading{
+    font-family: 'Square Peg', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #F8CB2E;
+    font-weight: bold;
+}
+
+.hand_mudra{
+    font-size: 40px;
+}
+
+.hand_mudra:hover{
+font-size: 55px;
+}
+
+#camera ,  #result{
+    border: 2px dashed ;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.buttons{
+    background-color: #F8CB2E;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.buttons:hover{
+    background-color:#F9D923;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

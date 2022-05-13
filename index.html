@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <title>Hand Mudra Recognition</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <center>
+    <div id="heading">Hand Mudra Recognition <br>
+        <Span class="hand_mudra">👌</Span>
+        <span class="hand_mudra">👍</span>
+        <span class="hand_mudra">🙏</span>
+        <Span class="hand_mudra">🤟</Span>
+        <span class="hand_mudra">🤙</span>
+        <span class="hand_mudra">🤌</span>
+        <span class="hand_mudra">✌️</span>
+    </div>
+
+    <h3 style="font-family: 'Square Peg', cursive; font-weight: 500;">👌 - ChinMudra <br>
+        👍 - MeluDandaMudra <br>
+        🙏 - AnjaliMudra
+    </h3>
+
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam</label>
+        <div id="camera"></div>
+              <br><br>
+        <button onclick="take_snapshot()" class="buttons">Capture Image</button>
+    </div>
+
+    
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="font-family: 'Square Peg', cursive; font-size: 20px;">Prediction 1</label>
+        <p class="mudra_name" id="result_mudra_name"></p>
+        <p class="mudra_emoji" id="result_mudra_emoji"></p>
+        <label style="font-family: 'Square Peg', cursive; font-size: 20px;">Prediction 2</label>
+        <p class="mudra_name" id="result_mudra_name2"></p>
+        <p class="mudra_emoji" id="result_mudra_emoji2"></p>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="buttons">Predict Mudra</button>
+    </div>
+</center>
+</div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
